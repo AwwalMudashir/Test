@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="spinner.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      /* background-color: black; */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinner"></div>
+  <div class="welcome"></div>
+  <div class="exam">
+  <section class="exam-nav">
+  <p>EXAM : English Language</p>   
+  <p>TYPE: Mock Examination</p>
+  <p>CLASS: SS2</p>
+  </section>
+  
+  <form class="questions" action="result.html">
+    <!-- <div class="question">
+      <h1 class="que">How do you spend Money</h1>
+      <div class="options">
+      <span><input type="radio"><option value="">Waste</option></span>
+      <span><input type="radio"><option value="">Chop</option></span>
+      <span><input type="radio"><option value="">Save</option></span>
+      <span><input type="radio"><option value="">Give</option></span>
+      </div>
+    </div> -->
+    <!-- <button>Submit</button> -->
+  </form>
+  </div>
+  <script>
+function showSpinner(){
+  document.querySelector('.spinner').classList.add('show');
+}
+function hideSpinner(){
+  document.querySelector('.spinner').classList.remove('show');
+}
+
+showSpinner();
+
+setTimeout(hideSpinner(),1500);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
